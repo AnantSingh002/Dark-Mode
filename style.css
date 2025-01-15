@@ -60,13 +60,18 @@ body {
   
   .slider:before {
     position: absolute;
-    content: "";
+    content: "☀️";
     height: 35px;
     width: 30px;
     padding: 2px;
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    color: #ffcc00;
+    text-align: center;
+    line-height: 34px;
+    
   }
   
   input:checked + .slider {
@@ -76,6 +81,9 @@ body {
   
   input:checked + .slider:before {
     transform: translateX(45px);
+    content: "🌙";
+    background-color: #444;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
   }
 
   p{
